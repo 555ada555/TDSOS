@@ -26,22 +26,21 @@
 BSP=rpi4 make
 BSP=rpi4 make doc 
 Перші два кроки реалізації п’ятого етапу однакові, а саме:
-1.	cтворити єдиний FAT32 розділ з іменем boot;
-2.	згенерувати на карті файл config.txt з наступним вмістом:
-arm_64bit=1 
-init_uart_clock=48000000
-Далі для Raspberry Pi 3 кроки 3-4 наступні:
-3.	слід скопіювати наступні файли з репозиторію прошивки Raspberry Pi https://github.com/raspberrypi/firmware/tree/master/boot на SD-карту:
--	bootcode.bin;
--	fixup.dat;
--	start.elf.
-4.	виконати make.
-Далі для Raspberry Pi4 кроки 3-4 наступні:
-3.	скопіювати наступні файли з репозиторію прошивки Raspberry Pi на SD-карту:
--	fixup4.dat;
--	start4.elf;
--	bcm2711-rpi-4-b.dtb.
-4.	виконайте BSP=rpi4 make.
-А уже наступні кроки для п’ятого етапу однакові для Raspberry Pi3 та 
-Raspberry Pi4.
-На шостому та сьомому етапі теж є розбіжності в залежності від версії обладнання на першому кроці слід запустити make (для RPi3) або BSP=rpi4 make (для RPi4).  А також на третьому кроці слід запустити make chainboot (для RPi3) або BSP=rpi4 make chainboot (для RPi4).
+> 1.	cтворити єдиний FAT32 розділ з іменем boot;
+> 2.	згенерувати на карті файл config.txt з наступним вмістом:
+> arm_64bit=1 
+> init_uart_clock=48000000
+> Далі для Raspberry Pi 3 кроки 3-4 наступні:
+> 3.	слід скопіювати наступні файли з репозиторію прошивки Raspberry Pi https://github.com/raspberrypi/firmware/tree/master/boot на SD-карту:
+> -	bootcode.bin;
+> -	fixup.dat;
+> -	start.elf.
+> 4.	виконати make.
+> Далі для Raspberry Pi4 кроки 3-4 наступні:
+> 3.	скопіювати наступні файли з репозиторію прошивки Raspberry Pi на SD-карту:
+> -	fixup4.dat;
+> -	start4.elf;
+> -	bcm2711-rpi-4-b.dtb.
+> 4.	виконайте BSP=rpi4 make.
+> А уже наступні кроки для п’ятого етапу однакові для Raspberry Pi3 та Raspberry Pi4.
+> На шостому та сьомому етапі теж є розбіжності в залежності від версії обладнання на першому кроці слід запустити make (для RPi3) або BSP=rpi4 make (для RPi4).  А також на третьому кроці слід запустити make chainboot (для RPi3) або BSP=rpi4 make chainboot (для RPi4).
