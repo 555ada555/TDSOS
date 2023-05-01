@@ -34,8 +34,8 @@ BSP=rpi4 make doc
 >> 3.	слід скопіювати наступні файли з репозиторію прошивки Raspberry Pi https://github.com/raspberrypi/firmware/tree/master/boot на SD-карту:
 >> -	bootcode.bin;
 >> -	fixup.dat;
->> -	start.elf.
->? 4.	виконати make.
+>> -	start.elf
+>> 4.	виконати make.
 > Далі для Raspberry Pi4 кроки 3-4 наступні:
 > 3.	скопіювати наступні файли з репозиторію прошивки Raspberry Pi на SD-карту:
 > -	fixup4.dat;
