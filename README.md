@@ -42,5 +42,5 @@ BSP=rpi4 make doc
 > -	start4.elf;
 > -	bcm2711-rpi-4-b.dtb.
 > 4.	виконайте BSP=rpi4 make.
-> А уже наступні кроки для п’ятого етапу однакові для Raspberry Pi3 та Raspberry Pi4.
+> -  А уже наступні кроки для п’ятого етапу однакові для Raspberry Pi3 та Raspberry Pi4.
 >> На шостому та сьомому етапі теж є розбіжності в залежності від версії обладнання на першому кроці слід запустити make (для RPi3) або BSP=rpi4 make (для RPi4).  А також на третьому кроці слід запустити make chainboot (для RPi3) або BSP=rpi4 make chainboot (для RPi4).
